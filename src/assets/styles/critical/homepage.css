@@ -1,0 +1,121 @@
+@import '../base/breakpoints';
+
+/** Homepage Hero */
+.homepage-hero-container {
+  grid-column: 4 / -1;
+  grid-row: 1 / 3;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media (--tablet) {
+  .homepage-hero-container {
+    grid-column: 6 / -1;
+  }
+}
+
+.homepage-hero {
+  border: 0;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/** Homepage Introduction */
+.homepage-introduction {
+  grid-column: 4 / -2;
+  grid-row: 3;
+}
+
+@media (--tablet) {
+  .homepage-introduction {
+    grid-column: 6 / span 6;
+  }
+}
+
+/** Homepage Statistics */
+.homepage-statistics {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2 / -2;
+  justify-content: center;
+}
+
+@media (--tablet) {
+  .homepage-statistics {
+    grid-column: 12 / -2;
+    grid-row: 4;
+  }
+}
+
+.homepage-statistics-image-container {
+  grid-column: 1 / -1;
+}
+
+@media (--tablet) {
+  .homepage-statistics-image-container {
+    grid-column: 2 / 11;
+    grid-row: 4;
+  }
+}
+
+.homepage-statistics-image {
+  object-fit: cover;
+}
+
+.homepage-statistics-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homepage-statistics-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-statistics-key {
+  order: -1;
+}
+
+.homepage-statistics-value {
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-black);
+}
+
+/** Homepage Districts */
+.homepage-districts {
+  grid-column: 2 / -2;
+  grid-row: 6;
+}
+
+@media (--tablet) {
+  .homepage-districts {
+    grid-row: 5;
+  }
+}
+
+.homepage-districts-grid {
+  display: grid;
+  grid-gap: calc(var(--space-55) / 4);
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-districts-item {
+  margin-block-end: 0;
+}
+
+.homepage-districts-item-link {
+  text-decoration: none;
+}
+
+.homepage-districts-item-headline {
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-normal);
+  margin-block-end: 0;
+}
+
+.homepage-districts-item-image {
+  margin-block-end: var(--space-3);
+}

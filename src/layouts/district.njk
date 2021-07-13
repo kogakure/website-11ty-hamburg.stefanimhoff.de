@@ -1,0 +1,22 @@
+---
+layout: default
+css: district.css
+---
+
+{% set previousPost = collections.districts | sortByTitle | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.districts | sortByTitle | getNextCollectionItem(page) %}
+
+<div class="image-shadow district-hero-container">
+  <img class="district-hero" src="/assets/images/hero/hamburg-{{ title | slug }}.jpg" alt="{{ title }}"/>
+</div>
+
+<div class="district-title">
+  <h2>{{ title }}</h2>
+  <small>{{ distance }} km / {{ (duration / 60) | round }} hrs.</small>
+</div>
+
+<div class="district-content">
+  {{ content | safe }}
+</div>
+
+{% include "pagination.njk" %}

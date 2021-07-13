@@ -1,7 +1,11 @@
 ---
-layout: base
+layout: default
+css: homepage.css
 title: Home
 permalink: /
 ---
 
-Hello, world!
+{% include "homepage-header.njk" %}
+{% include "homepage-introduction.njk" %}
+{% include "homepage-statistics.njk" %}
+{% include "homepage-districts.njk" %}

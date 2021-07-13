@@ -1,0 +1,6 @@
+{
+  "layout": "district",
+  "permalink": "/{{ page.fileSlug }}/",
+  "tags": ["districts"],
+  "templateEngineOverride": "njk,md"
+}

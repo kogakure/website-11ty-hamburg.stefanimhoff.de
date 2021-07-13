@@ -1,4 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8175427a-59d7-4a73-8be3-70d1e5a255b5/deploy-status)](https://app.netlify.com/sites/hamburg-stefanimhoff-de/deploys)
 [![Live](https://img.shields.io/badge/live-hamburg.stefanimhoff.de-green.svg)](https://hamburg.stefanimhoff.de/)
 ![Maintenance](https://img.shields.io/maintenance/yes/2021.svg)
 
@@ -29,5 +28,4 @@ In easier words: **This is not a free theme**. Learn from it. Remix. Reuse. Buil
 [eleventy]: https://www.11ty.dev/
 [gulp]: https://gulpjs.com/
 [postcss]: https://postcss.org/
-[si]: https://www.stefanimhoff.de/
 [travel blog]: https://hamburg.stefanimhoff.de/

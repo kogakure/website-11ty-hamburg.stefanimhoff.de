@@ -7,4 +7,9 @@ module.exports = {
   dateToISO: function (date) {
     return moment(date).format();
   },
+  sortByTitle: function (values) {
+    return values
+      .slice()
+      .sort((a, b) => a.data.title.localeCompare(b.data.title));
+  },
 };
