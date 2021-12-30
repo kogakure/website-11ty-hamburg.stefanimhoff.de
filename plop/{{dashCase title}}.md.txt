@@ -1,0 +1,9 @@
+---
+title: {{titleCase title}}
+date: {{date}}
+author: Stefan Imhoff
+distance: 0
+duration: 0:00
+---
+
+
