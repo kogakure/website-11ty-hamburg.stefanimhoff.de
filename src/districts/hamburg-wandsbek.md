@@ -10,7 +10,7 @@ In the north of _Wandsbek_ there are many small settlements, which are very pret
 
 ![Wandsbeker cottage](/assets/images/districts/wandsbek-01.jpg)
 
-Near the _Bundeswehr Hospital_ you will find mostly higher buildings (skyscrapers), some Aldi and Lidl markets. The Bundeswehr Hospital is not accessible to private persons, it is military terrain.
+Near the _Bundeswehr Hospital_ you will find mostly higher buildings (skyscrapers), some Aldi and Lidl markets.
 
 The _Staatsarchiv_ has original documents on the town’s history and numerous other files.
 
