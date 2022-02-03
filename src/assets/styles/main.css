@@ -4,6 +4,9 @@
 @import 'base/videos';
 
 /* Layout */
+@import 'components/email';
+
+/* Layout */
 @import 'layout/page-footer';
 @import 'layout/footnotes';
 @import 'layout/legal';

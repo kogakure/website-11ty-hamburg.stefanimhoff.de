@@ -10,13 +10,13 @@ module.exports = {
       ${text}
     </a>`;
     const keyDownload = outdent`
-    <span id="lock-box" class="about-lock-box hidden">
+    <span id="lock-box" class="lock-box hidden">
       <a
         title="${downloadText}"
         aria-label="${downloadText}"
         href="/downloads/publickey.hey@imhoff.name-9cb867d4ccd2c1d7d9fde82f4b649797f3e007a9.asc"
       >
-        <svg class="about-lock-icon" aria-hidden="true" viewBox="0 0 24 24" width="1em" height="1em">
+        <svg class="lock-icon" aria-hidden="true" viewBox="0 0 24 24" width="1em" height="1em">
           <use xlink:href="#lock"></use>
         </svg>
       </a></span>`;
