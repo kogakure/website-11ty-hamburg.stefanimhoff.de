@@ -23,7 +23,7 @@ Walter-Heitmann-Str. 2<br />
 
 ### License
 
-All content is copyrighted by _Stefan Imhoff_ unless otherwise stated. Feel free to learn from the [Source Code] and reuse code for your projects.
+All content is copyrighted by [Stefan Imhoff] unless otherwise stated. Feel free to learn from the [Source Code] and reuse code for your projects.
 
 The use of my design—the unique combination of layout, photos, or illustrations—my private photos, personal data, and logo are only allowed with written permission.
 
@@ -50,4 +50,5 @@ I take the protection of your personal data very seriously and strictly adhere t
 [remix icon]: https://remixicon.com/
 [jimmy cheung]: https://github.com/xiaochunjimmy
 [wendy gao]: https://github.com/wendygaoyuan
+[stefan imhoff]: https://www.stefanimhoff.de
 [source code]: https://github.com/kogakure/website-11ty-hamburg.stefanimhoff.de
