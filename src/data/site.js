@@ -8,7 +8,7 @@ module.exports = {
   buildTime: new Date(),
   title: 'Exploring Hamburg',
   description: 'Street by Street, District by District',
-  url: 'https://www.kogakure.de',
+  url: 'https://hamburg.stefanimhoff.de',
   author: 'Stefan Imhoff',
   twitter: '@kogakure',
   faviconPath: '/assets/images/branding/favicons/',
