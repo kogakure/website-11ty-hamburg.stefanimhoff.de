@@ -7,7 +7,7 @@
     <li class="homepage-districts-item" {{ site.animation }}>
       <a class="homepage-districts-item-link" href="{{ item.url }}">
         <div class="image-shadow">
-          <img src="/assets/images/districts/thumbnails/hamburg-{{ item.data.title | slug }}-450px.jpg" class="homepage-districts-item-image" alt="#">
+          <img src="/assets/images/districts/thumbnails/hamburg-{{ item.data.title | slugify }}-450px.jpg" class="homepage-districts-item-image" alt="#">
         </div>
         <h3 class="homepage-districts-item-headline">
           {{ item.data.title }}

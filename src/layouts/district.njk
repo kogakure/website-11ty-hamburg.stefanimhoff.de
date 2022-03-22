@@ -7,7 +7,7 @@ css: district.css
 {% set nextPost = collections.districts | sortByTitle | getNextCollectionItem(page) %}
 
 <div class="image-shadow district-hero-container">
-  <img class="district-hero" src="/assets/images/hero/hamburg-{{ title | slug }}.jpg" alt="{{ title }}"/>
+  <img class="district-hero" src="/assets/images/hero/hamburg-{{ title | slugify }}.jpg" alt="{{ title }}"/>
 </div>
 
 <div class="district-title">

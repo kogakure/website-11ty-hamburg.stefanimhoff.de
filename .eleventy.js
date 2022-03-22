@@ -86,7 +86,7 @@ module.exports = function (config) {
       layouts: 'layouts',
       output: 'dist',
     },
-    templateFormats: ['njk', 'md', '11ty.js', 'jpg', 'png', 'svg'],
+    templateFormats: ['njk', 'md', '11ty.js'],
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
