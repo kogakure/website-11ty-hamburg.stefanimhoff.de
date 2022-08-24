@@ -1,12 +1,12 @@
 /** Page Header */
 .page-header {
-  /* margin-block-end: clamp(1.5rem, var(--space-55), 4.5rem); */
-  display: grid;
-  grid-column: 1 / -1;
-  grid-row: 1;
-  grid-template-columns: var(--grid-fullsize);
-  grid-template-rows: clamp(3rem, var(--space-55), 9rem);
-  z-index: 1;
+	/* margin-block-end: clamp(1.5rem, var(--space-55), 4.5rem); */
+	display: grid;
+	grid-column: 1 / -1;
+	grid-row: 1;
+	grid-template-columns: var(--grid-fullsize);
+	grid-template-rows: clamp(3rem, var(--space-55), 9rem);
+	z-index: 1;
 }
 
 /* .minimal-page-header { */

@@ -1,15 +1,15 @@
 <div class="image-shadow homepage-statistics-image-container">
-  <img 
-    class="homepage-statistics-image"
-    sizes="(max-width: 1200px) 100vw, 1200px" 
-    srcset="/assets/images/core/map-300.jpg 300w,
-            /assets/images/core/map-600.jpg 600w,
-            /assets/images/core/map-1200.jpg 1200w,
-            /assets/images/core/map.jpg 1800w"
-    src="/assets/images/core/map.jpg"
-    alt="Historical Map of Hamburg"
-    {{ site.animation }}
-  />
+	<img 
+		class="homepage-statistics-image"
+		sizes="(max-width: 1200px) 100vw, 1200px" 
+		srcset="/assets/images/core/map-300.jpg 300w,
+				/assets/images/core/map-600.jpg 600w,
+				/assets/images/core/map-1200.jpg 1200w,
+				/assets/images/core/map.jpg 1800w"
+		src="/assets/images/core/map.jpg"
+		alt="Historical Map of Hamburg"
+		{{ site.animation }}
+	/>
 </div>
 
 {% set distance = 0 %}
@@ -17,39 +17,39 @@
 {% set count = 0 %}
 
 {% for item in collections.districts %}
-  {% set distance = distance + item.data.distance %}
-  {% set duration = duration + item.data.duration %}
-  {% set count = loop.length %}
+	{% set distance = distance + item.data.distance %}
+	{% set duration = duration + item.data.duration %}
+	{% set count = loop.length %}
 {% endfor %}
 
 <section id="statistics" class="homepage-statistics" {{ site.animationDelay }}>
-  <h3 class="homepage-statistics-headline">
-    Statistics
-  </h3>
-  <div class="homepage-statistics-container">
-    <div class="homepage-statistics-item">
-      <span class="homepage-statistics-value">
-        {{ distance }} 
-      </span>
-      <span class="homepage-statistics-key">
-        Kilometers
-      </span>
-    </div>
-    <div class="homepage-statistics-item">
-      <span class="homepage-statistics-value">
-        {{ (duration / 60) | round }}
-      </span>
-      <span class="homepage-statistics-key">
-        Hours
-      </span>
-    </div>
-    <div class="homepage-statistics-item">
-      <span class="homepage-statistics-value">
-        {{ count }}
-      </span>
-      <span class="homepage-statistics-key">
-        Districts
-      </span>
-    </div>
-  </div>
+	<h3 class="homepage-statistics-headline">
+		Statistics
+	</h3>
+	<div class="homepage-statistics-container">
+		<div class="homepage-statistics-item">
+			<span class="homepage-statistics-value">
+				{{ distance }}
+			</span>
+			<span class="homepage-statistics-key">
+				Kilometers
+			</span>
+		</div>
+		<div class="homepage-statistics-item">
+			<span class="homepage-statistics-value">
+				{{ (duration / 60) | round }}
+			</span>
+			<span class="homepage-statistics-key">
+				Hours
+			</span>
+		</div>
+		<div class="homepage-statistics-item">
+			<span class="homepage-statistics-value">
+				{{ count }}
+			</span>
+			<span class="homepage-statistics-key">
+				Districts
+			</span>
+		</div>
+	</div>
 </section>

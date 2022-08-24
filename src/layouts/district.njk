@@ -7,16 +7,16 @@ css: district.css
 {% set nextPost = collections.districts | sortByTitle | getNextCollectionItem(page) %}
 
 <div class="image-shadow district-hero-container">
-  <img class="district-hero" src="/assets/images/hero/hamburg-{{ title | slugify }}.jpg" alt="{{ title }}"/>
+	<img class="district-hero" src="/assets/images/hero/hamburg-{{ title | slugify }}.jpg" alt="{{ title }}"/>
 </div>
 
 <div class="district-title">
-  <h2>{{ title }}</h2>
-  <small>{{ distance }} km / {{ (duration / 60) | round }} hrs.</small>
+	<h2>{{ title }}</h2>
+	<small>{{ distance }} km / {{ (duration / 60) | round }} hrs.</small>
 </div>
 
 <div class="district-content">
-  {{ content | safe }}
+	{{ content | safe }}
 </div>
 
 {% include "pagination.njk" %}

@@ -1,15 +1,15 @@
 const outdent = require('outdent')({
-  newline: ' ',
+	newline: ' ',
 });
 
 module.exports = {
-  email: function (text, key = false) {
-    const downloadText = 'Download public key (ProtonMail/GPG)';
-    const link = outdent`
+	email: function (text, key = false) {
+		const downloadText = 'Download public key (ProtonMail/GPG)';
+		const link = outdent`
     <a id="email" class="objuscated" href="mailto:hey (at) imhoff (dot) name">
       ${text}
     </a>`;
-    const keyDownload = outdent`
+		const keyDownload = outdent`
     <span id="lock-box" class="lock-box hidden">
       <a
         title="${downloadText}"
@@ -21,20 +21,20 @@ module.exports = {
         </svg>
       </a></span>`;
 
-    return `${link} ${key ? keyDownload : ''}`;
-  },
-  map: function (mid) {
-    return outdent`
+		return `${link} ${key ? keyDownload : ''}`;
+	},
+	map: function (mid) {
+		return outdent`
     <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=${mid}" width="1000" height="500">
     </iframe>`;
-  },
-  youtube: function (id) {
-    return outdent`
+	},
+	youtube: function (id) {
+		return outdent`
     <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/${id}"
         frameborder="0" allowfullscreen
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
       </iframe>
     </div>`;
-  },
+	},
 };

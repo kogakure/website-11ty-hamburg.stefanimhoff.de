@@ -8,36 +8,36 @@ const date = moment().format();
 const year = moment().format('YYYY');
 
 module.exports = function (plop) {
-  plop.setGenerator('District', {
-    description: 'Create a new district',
-    prompts: [
-      {
-        type: 'input',
-        name: 'title',
-        message: 'Title',
-        validate(value) {
-          if (/.+/.test(value)) {
-            return true;
-          }
-          return 'Title is required';
-        },
-      },
-    ],
-    actions() {
-      process.chdir(plop.getPlopfilePath());
+	plop.setGenerator('District', {
+		description: 'Create a new district',
+		prompts: [
+			{
+				type: 'input',
+				name: 'title',
+				message: 'Title',
+				validate(value) {
+					if (/.+/.test(value)) {
+						return true;
+					}
+					return 'Title is required';
+				},
+			},
+		],
+		actions() {
+			process.chdir(plop.getPlopfilePath());
 
-      return [
-        {
-          type: 'addMany',
-          destination: `${currentDir}/src/districts/`,
-          base: `${templatePath}`,
-          templateFiles: '**/*.txt',
-          stripExtensions: ['txt'],
-          data: {
-            date,
-          },
-        },
-      ];
-    },
-  });
+			return [
+				{
+					type: 'addMany',
+					destination: `${currentDir}/src/districts/`,
+					base: `${templatePath}`,
+					templateFiles: '**/*.txt',
+					stripExtensions: ['txt'],
+					data: {
+						date,
+					},
+				},
+			];
+		},
+	});
 };
