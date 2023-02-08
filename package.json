@@ -14,8 +14,8 @@
 		"deploy:preview": "netlify deploy",
 		"dev": "ELEVENTY_ENV=development npm run watch",
 		"plop": "plop",
-		"prebuild": "npm run clean",
-		"prestart": "npm run clean",
+		"prebuild": "pnpm run clean",
+		"prestart": "pnpm run clean",
 		"publish": "npm-run-all build deploy",
 		"start": "netlify dev",
 		"svg": "gulp svg",
@@ -87,5 +87,7 @@
 		"vinyl-source-stream": "^2.0.0",
 		"workbox-cli": "^6.1.5"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"@babel/core": "^7.0.0"
+	}
 }
