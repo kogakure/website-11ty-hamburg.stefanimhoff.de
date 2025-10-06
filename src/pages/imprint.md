@@ -11,9 +11,7 @@ excludeFromSitemap: true
 ### Contact Person
 
 Stefan Imhoff<br />
-Walter-Heitmann-Str. 2<br />
-22159 Hamburg<br />
-{% email "Contact", true %}
+{% email "E-Mail", true %}
 
 ### Acknowledgments
 

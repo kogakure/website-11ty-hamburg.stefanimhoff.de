@@ -2,7 +2,6 @@
 	"name": "website-11ty-hamburg.stefanimhoff.de",
 	"version": "1.0.0",
 	"description": "Source code of my travel blog",
-	"main": "index.js",
 	"scripts": {
 		"build": "ELEVENTY_ENV=production npm-run-all build:assets build:html build:sw",
 		"build:assets": "gulp build",
@@ -10,7 +9,7 @@
 		"build:sw": "workbox generateSW workbox.config.js",
 		"clean": "npx del dist",
 		"debug": "DEBUG=* npx eleventy",
-		"dev": "ELEVENTY_ENV=development npm run watch",
+		"dev": "ELEVENTY_ENV=development pnpm run watch",
 		"plop": "plop",
 		"prebuild": "pnpm run clean",
 		"prestart": "pnpm run clean",
@@ -41,7 +40,7 @@
 		"del-cli": "^3.0.1",
 		"eleventy-nbsp-filter": "^0.1.0",
 		"eleventy-plugin-lazyimages": "^2.1.2",
-		"eslint": "^7.25.0",
+		"eslint": "^7.29.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^3.4.0",
 		"gulp": "^4.0.2",
@@ -70,8 +69,8 @@
 		"postcss-media-minmax": "^5.0.0",
 		"postcss-nested": "^5.0.5",
 		"postcss-sort-media-queries": "^3.8.9",
-		"prettier": "^2.2.1",
-		"sal.js": "^0.8.4",
+		"prettier": "^2.3.2",
+		"sal.js": "^0.8.5",
 		"stylelint": "^13.13.0",
 		"stylelint-a11y": "^1.2.3",
 		"stylelint-config-prettier": "^8.0.2",
@@ -87,5 +86,8 @@
 	},
 	"dependencies": {
 		"@babel/core": "^7.0.0"
+	},
+	"resolutions": {
+		"webidl-conversions": "7.0.0"
 	}
 }
