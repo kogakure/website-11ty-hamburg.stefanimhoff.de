@@ -2,6 +2,11 @@
 	"name": "website-11ty-hamburg.stefanimhoff.de",
 	"version": "1.0.0",
 	"description": "Source code of my travel blog",
+	"packageManager": "pnpm@10.34.1",
+	"engines": {
+		"node": ">=22.13",
+		"pnpm": ">=10"
+	},
 	"scripts": {
 		"build": "ELEVENTY_ENV=production npm-run-all build:assets build:html build:sw",
 		"build:assets": "gulp build",
